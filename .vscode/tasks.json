@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "dev",
+			"path": "crossfit-wod-api",
+			"problemMatcher": [],
+			"label": "npm: dev - crossfit-wod-api",
+			"detail": "nodemon index.js"
+		}
+	]
+}
