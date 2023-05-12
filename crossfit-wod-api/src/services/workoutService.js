@@ -1,10 +1,11 @@
 // In src/services/workoutService.js
 const { v4: uuid } = require("uuid");
-const Workout = require("../database/Workout");
+const Workout = require("../database/workout");
 
-const getAllWorkouts = () => {
+const getAllWorkouts = (filterParams) => {
   try {
-    const allWorkouts = Workout.getAllWorkouts();
+    // *** ADD ***
+    const allWorkouts = Workout.getAllWorkouts(filterParams);
     return allWorkouts;
   } catch (error) {
     throw error;
