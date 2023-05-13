@@ -1,6 +1,8 @@
-// In src/services/workoutService.js
+//este é um serviço robusto para gerenciar exercícios de uma API de treino. 
+//Ele interage com o modelo Workout para executar operações de banco de dados reais 
+//enquanto expõe uma API conveniente para consumo do controlador.
 const { v4: uuid } = require("uuid");
-const Workout = require("../database/workout");
+const Workout = require("../database/Workout");
 
 const getAllWorkouts = (filterParams) => {
   try {
